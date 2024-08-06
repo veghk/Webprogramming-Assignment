@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Végh Krisztián Burgonya térképe</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  
+  <div id="leftPanel">
+    <h1 class="Head">Burgonya Térkép</h1>
+    <div id="mapcontainer">
+      <div id="gameOverContainer">
+        <div id="gameOver">
+          <div class="center">
+            <p>A játéknak vége!!</p>
+            <p>Kattints az újrajátszáshoz!</p>
+            <p>A pontszámod: <span id="gameOverScore"></span></p>
+          </div>
+        </div>
+      </div>
+      <div id="map">
+      </div>
+    </div>
+  </div>
+  <div id="rightPanel">
+    <div>
+      <div id="seasons">
+        <div id="spring"><p class="center">Tavasz: <br> <span id="score0">0</span>&nbsp;pont</p></div>
+        <div id="summer"><p class="center">Nyár: <br> <span id="score1">0</span>&nbsp;pont</p></div>
+        <div id="autumn"><p class="center">Ősz: <br> <span id="score2">0</span>&nbsp;pont</p></div>
+        <div id="winter"><p class="center">Tél: <br> <span id="score3">0</span>&nbsp;pont</p></div>
+      </div>
+      <div id="scoreDiv"><b>Összesen: <span id="score">0</span>&nbsp;pont</b></div>
+    </div>
+    <h2>Jelenlegi évszak: <span id="currentSeason">Tavasz</span> <span id="currentQuest"></span></h2>
+    <hr>
+    <div id="missions">
+      <div id="mission0">0 pont &nbsp;</div>
+      <div id="mission1">0 pont &nbsp;</div>
+      <div id="mission2">0 pont &nbsp;</div>
+      <div id="mission3">0 pont &nbsp;</div>
+    </div>
+    <h2>Évszakből hátralévő idő: <span id="currentTimeLeft">7/7</span></h2>
+    <hr>
+    <div id="nextTile">
+    <h2>Lehelyezendő elem</h2>
+      <div id="nextTileGrid">
+        
+        <div id="nextTileLeft">
+          <button class="button" id="rotate">Forgatás</button>
+          <button class="button" id="mirror">Tükrözés</button>
+        </div>
+        <div id="nextTileRight">
+            <div id="tilePreviewRelative">
+              <div id="placeTimeContainer">
+                    <span id="placeTime">1</span>
+                    <img style="border-radius: 10%;" src="assets/timer.png">
+              </div>
+              <div id="tilePreview"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
